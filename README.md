@@ -41,7 +41,8 @@ Ce TD a pour objectif d'apprendre les principales étapes de préparation des do
 │   ├── ex5_imputation.py
 │   ├── ex6_simple_imputer.py
 │   └── ex7_strategy.py
-│
+├── notebooks/
+│   └── TD_Preprocessing.ipynb
 ├── requirements.txt
 ├── README.md
 └── .gitignore
@@ -173,8 +174,30 @@ python src/ex7_strategy.py
 
 ---
 
+## Export du notebook en PDF
+
+Le notebook `TD_Preprocessing.ipynb` peut être exporté en PDF pour une consultation hors ligne ou pour une soumission. Pour cela suivez les étapes suivantes :
+
+- Installer les prérequis nécessaires pour l'export en PDF.
+
+```bash
+pip install nbconvert
+pip install pandoc
+pip install texlive-xetex texlive-fonts-recommended texlive-plain-generic
+
+```
+
+- Exporter le notebook en PDF en utilisant la commande `nbconvert`.
+
+```bash
+jupyter nbconvert --to pdf notebooks/TD_Preprocessing.ipynb
+```
+
+---
+
 ## Remarques
 
 - Assurez-vous que les fichiers CSV sont correctement placés dans le dossier `data/`.
 - Vérifiez que l'environnement virtuel est activé avant d'exécuter les scripts.
 - Les scripts Python sont conçus pour être exécutés de manière séquentielle, chaque exercice construisant sur le précédent.
+- Transformer un note
